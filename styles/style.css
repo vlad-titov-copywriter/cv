@@ -77,22 +77,25 @@ h1, h2, p {
 
 h3 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 10px;
     color: #212529;
     text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    padding-bottom: 20px;
 }
 
 h4 {
     font-size: 20px;
     background-color: var(--myColor);
     padding: 0 8px;
-    font-weight: 400;
+    font-weight: 600;
     width: max-content;
     margin-bottom: 10px;
     margin-top: 0;
     color: #212529;
     text-align: center;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* burger menu */
@@ -302,14 +305,16 @@ z-index: 3;
 
 .main-block__list li {
     list-style-type: square;
-    font-size: 22px;
-    margin-bottom: 2px;
+    font-size: 26px;
+    margin-bottom: 25px;
     text-align: left;
     list-style-position: outside;
+    padding-left: 0;
   }
   
 .main-block__list {
     margin: 10px 0 20px;
+    padding-left: 25px;
     }
 
 /* second block */
@@ -325,12 +330,23 @@ z-index: 3;
     align-items: center;
 }
 
+.about-me h3 {
+    margin-bottom: 10px;
+}
+
 .title {
     font-size: 36px;
     margin-top: 0;
     font-weight: 400;
     align-self: flex-start;
     margin-bottom: 5px;
+}
+
+.title-topics {
+    font-size: 36px;
+    font-weight: 400;
+    align-self: flex-start;
+    margin: 20px auto 10px;
 }
 
 .title__name {
@@ -361,6 +377,7 @@ z-index: 3;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-top: 20px;
 }
 
 .about-me__columns a {
@@ -373,12 +390,17 @@ z-index: 3;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-top: 0;
 }
 
 .about-me__text {
     display: flex;
     flex-direction: column;
     width: 68%;
+}
+
+.about-me__text .text {
+    margin-bottom: 0;
 }
 
 .about-me__experience {
@@ -412,7 +434,6 @@ z-index: 3;
 }
 
 .about-me__languages {
-    display: flex;
     margin-top: 40px;
     width: 100%;
 }
@@ -421,14 +442,15 @@ z-index: 3;
     color: #212529;
     font-size: 20px;
     font-weight: 600;
-    padding-left: 1%;
+    margin-top: 10px;
 }
 
 .about-me__languages_titles {
     color: #6c757d;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .material-symbols-rounded {
@@ -481,13 +503,13 @@ z-index: 3;
 
 .education-block h6 {
     color: #212529;
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 0;
     margin-bottom: 10px;
 }  
 
 .education-block__column {
-    border-left: 2px solid var(--myColor);
+    border-left: 3px solid var(--myColor);
     padding: 0 10px 0 20px;
     margin-top: 20px;
     display: grid;
@@ -502,7 +524,7 @@ z-index: 3;
 }
     
 .text-description {
-    font-size: 18px;
+    font-size: 20px;
     color: #6c757d;
     margin-top: 0;
     margin-bottom: 0;
@@ -537,7 +559,9 @@ z-index: 3;
 }
 
 .portfolio-block__item p {
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
 } 
 
 .portfolio-block__items a {
@@ -548,6 +572,99 @@ z-index: 3;
     margin-bottom: 20px;
     border: 2px solid var(--myColor);
     cursor: pointer;
+}
+
+.portfolio-block a button {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: var(--myColor);
+    padding: 12px 35px;
+    width: max-content;
+    margin: 30px auto 15px;
+    color: #000000;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 5px 5px 20px 0px rgb(44, 39, 39);
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-block a {
+    text-decoration: none;
+}
+
+/* price-block */
+
+.price-block {
+    background-color: #f8f9fa;
+}
+
+.block-title h3 {
+    margin-bottom: 10px;
+}
+
+.price-block__items {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 70px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.price-block__item {
+    text-align: center;
+    padding: 15px;
+}
+
+.price-block__item {
+    color: #212529;
+    font-size: 21px;
+}
+
+.price-block__title {
+   font-size: 24px;
+   border-bottom: 3px solid var(--myColor);
+   width: fit-content;
+   margin: 0 auto 20px;
+}
+
+.price-block__sum {
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+
+.price-block__volume {
+    font-size: 18px;
+}
+
+.price-block__description {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.price-block__button {
+    font-size: 18px;
+    line-height: 1.55;
+    width: 60%;
+    padding: 10px 0 10px;
+    margin: 0 auto 0;
+    font-weight: 600;
+    border-width: 2px;
+    border-radius: 30px;
+    background-color: var(--myColor);
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 5px 5px 20px 0px rgb(230 202 202);
+}
+
+.price-block__button a {
+    text-decoration: none;
+    color: #000000;
 }
 
 /* extra block  */
@@ -611,17 +728,23 @@ code {
 .contact-block__preview h2 {
     font-size: 44px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .contact-block__preview h4 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     background-color: var(--myColor);
     padding: 8px 25px;
     width: max-content;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 5px 5px 20px 0px rgb(44, 39, 39);
+    box-shadow: 5px 5px 20px 0px rgb(230 202 202);
 }
 
 .contact-block__preview h4 a {
@@ -1035,6 +1158,12 @@ footer {
         column-gap: 20px;
     }
 
+    .price-block__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
     .education-block__columns {
         grid-template-columns: 1fr;
         margin-top: 0;
@@ -1150,6 +1279,18 @@ footer {
     }
 
     .skills-block__item {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .price-block__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        margin: 0;
+    }
+
+    .price-block__item {
         font-size: 24px;
         margin: 0;
     }
@@ -1382,6 +1523,10 @@ footer {
     }
 
     .skills-block__item {
+        font-size: 16px;
+    }
+
+    .price-block__item {
         font-size: 16px;
     }
 
